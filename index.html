@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleb Freitas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="menu">
+        <h1> CMF </h1>
+        <ul>
+            <li onclick="mudarHome();" class="bttnSelected" id="bttnHome"><a>Home</a></li>
+            <li onclick="mudarComp();" class="bttn" id="bttnComp"><a>Soft Skills</a></li>
+            <li onclick="mudarForm();" class="bttn" id="bttnForm"><a>Formação</a></li>
+            <li onclick="mudarCont();" class="bttn" id="bttnCont"><a>Contato</a></li>
+        </ul>
+        <div class="imagens">
+            <a href="https://www.linkedin.com/in/caleb-moretto-freitas/">
+                <img src="Vectorlinkedin.png" height="100%" class="imagem">
+            </a>
+            <a href="https://github.com/Calebcmf">
+                <img src="Vectorgit.png" height="100%" class="imagem">
+            </a>
+
+        </div>
+    </div>
+    <div id="frameHome" class="frameHome">
+        <div class="container">
+            <h1>
+                Caleb Freitas,
+            </h1>
+            <svg>
+                <symbol id="s-text">
+                    <text text-anchor="star" x="5%" y="42%">
+                        Web
+                    </text>
+                    <text text-anchor="star" x="5%" y="89%">
+                        Developer
+                    </text>
+                </symbol>
+
+                <g class="g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+            </svg>
+            <h2>> Front-end e Back-end < </h2>
+        </div>
+    </div>
+    <div id="frameComp" class="frameComp">
+        <h1>Competências:</h1>
+        <h4>Proatividade</h4>
+        <h6>
+            Busco aprender e me desenvolver cada vez mais e
+            busco uma solução para os problemas
+            que aparecem.
+        </h6>
+        <h4>Colaboração</h4>
+        <h6>
+            Gosto de trabalhar em equipe. Acredito que quando todos na equipe
+            têm o mesmo foco, podemos alcançar resultados mais significativos.
+        </h6>
+        <h4>Compromisso</h4>
+        <h6>
+            Sou organizado e comprometido com as demandas que me são entregues. Acredito que trabalhar em um
+            ambiente desorganizado apenas prejudica a produtividade.
+        </h6>
+        <h4>Flexibilidade</h4>
+        <h6>
+            Sou uma pessoa flexível e me adapto facilmente às situações.
+        </h6>
+    </div>
+    <div id="frameForm" class="frameForm">
+        <h1>Formação:</h1>
+        <h4>Técnico - Desenvolvimento de Sistemas <i>(2021-2024)</i></h4>
+        <h6>
+            <b>SESI SENAI</b> <br>
+            O técnico foi focado em Desenvolvimento Web. <br>
+            <b>+</b> Linguagens Principais: HTML/CSS, JavaScript, PHP, SQL. <br>
+            <b>+</b> Linguagem também aprendida: C++
+        </h6>
+        <h4>Curso HTML Avançado <i>(6 horas)</i></h4>
+        <h6>
+            <b>Fundação Bradesco</b>
+        </h6>
+        <h4>Inglês Básico <i>(1 ano e meio)</i></h4>
+        <h6><b>SESI SENAI</b></h6>
+    </div>
+    <div id="frameCont" class="frameCont">
+        <h1>Contate-me:</h1>
+        <h4>E-mail</h4>
+        <h6>Calebmoretto8878@gmail.com</h6>
+        <h4>Telefone</h4>
+        <h6>+55 (47) 9 99109-5158</h6>
+        <h4>Instagram Pessoal</h4>
+        <h6><a href="https://instagram.com/caleb_cmf/" style="text-decoration: none; color: #2c2c77;">Caleb_cmf</a></h6>
+    </div>
+</body>
+
+<script>
+    function mudarHome() {
+        document.getElementById("frameHome").style.display = "flex";
+        document.getElementById("frameForm").style.display = "none";
+        document.getElementById("frameCont").style.display = "none";
+        document.getElementById("frameComp").style.display = "none";
+
+        document.getElementById("bttnHome").className = "bttnSelected";
+        document.getElementById("bttnComp").className = "bttn";
+        document.getElementById("bttnForm").className = "bttn";
+        document.getElementById("bttnCont").className = "bttn";
+
+    }
+    function mudarComp() {
+        document.getElementById("frameHome").style.display = "none";
+        document.getElementById("frameForm").style.display = "none";
+        document.getElementById("frameCont").style.display = "none";
+        document.getElementById("frameComp").style.display = "flex";
+
+        document.getElementById("bttnHome").className = "bttn";
+        document.getElementById("bttnComp").className = "bttnSelected";
+        document.getElementById("bttnForm").className = "bttn";
+        document.getElementById("bttnCont").className = "bttn";
+    }
+    function mudarForm() {
+        document.getElementById("frameHome").style.display = "none";
+        document.getElementById("frameForm").style.display = "flex";
+        document.getElementById("frameCont").style.display = "none";
+        document.getElementById("frameComp").style.display = "none";
+
+        document.getElementById("bttnHome").className = "bttn";
+        document.getElementById("bttnComp").className = "bttn";
+        document.getElementById("bttnForm").className = "bttnSelected";
+        document.getElementById("bttnCont").className = "bttn";
+    }
+    function mudarCont() {
+        document.getElementById("frameHome").style.display = "none";
+        document.getElementById("frameForm").style.display = "none";
+        document.getElementById("frameCont").style.display = "flex";
+        document.getElementById("frameComp").style.display = "none";
+
+        document.getElementById("bttnHome").className = "bttn";
+        document.getElementById("bttnComp").className = "bttn";
+        document.getElementById("bttnForm").className = "bttn";
+        document.getElementById("bttnCont").className = "bttnSelected";
+    }
+</script>
+</html>
