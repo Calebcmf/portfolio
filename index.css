@@ -41,7 +41,7 @@ ul {
     align-items: center;
     justify-content: center;
     background-color: #030321;
-    color: #343480;
+    color: #5656b4;
     border-radius: 5px;
     transition: 0.5s;
 }
@@ -53,8 +53,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #08083a;
-    background-color: #343480;
+    color: #111157;
+    background-color: #3c3c8d;
     border-radius: 5px;
     transition: 0.5s;
 }
@@ -66,7 +66,7 @@ li a {
 }
 
 .bttn:hover {
-    background-color: #08083b;
+    background-color: #111157;
     cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ li a {
 }
 
 .menu {
-    background: #010116;
+    background: #06063a;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@ li a {
 }
 
 h2 {
-    color: #343480;
+    color: #5656b4;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     margin-left: 5%;
@@ -201,7 +201,7 @@ h6 {
     margin: 0;
     font-size: 0.8em;
     font-weight: 400;
-    color: #2c2c77;
+    color: #5656b4;
     max-width: 80%;
 }
 
@@ -338,7 +338,7 @@ svg {
         align-items: center;
         justify-content: center;
         background-color: #030321;
-        color: #343480;
+        color: #5656b4;
         border-radius: 5px;
         transition: 0.5s;
     }
@@ -351,7 +351,7 @@ svg {
         align-items: center;
         justify-content: center;
         color: #08083a;
-        background-color: #343480;
+        background-color: #5656b4;
         border-radius: 5px;
         transition: 0.5s;
     }
@@ -477,7 +477,7 @@ svg {
         align-items: center;
         justify-content: center;
         background-color: #030321;
-        color: #343480;
+        color: #5656b4;
         border-radius: 5px;
         transition: 0.5s;
         text-align: center;
@@ -491,7 +491,7 @@ svg {
         align-items: center;
         justify-content: center;
         color: #08083a;
-        background-color: #343480;
+        background-color: #5656b4;
         border-radius: 5px;
         transition: 0.5s;
         text-align: center;
