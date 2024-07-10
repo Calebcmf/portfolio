@@ -252,11 +252,13 @@ svg {
         stroke-dashoffset: -35%;
     }
 }
+
 @media only screen and (max-device-width: 1300px) {
     svg {
         height: 45%;
     }
 }
+
 @media only screen and (max-device-width: 1100px) {
     svg {
         font: 9.2em 'Montserrat';
@@ -320,9 +322,11 @@ svg {
         top: 0;
         left: 0;
     }
-    .menu h1{
+
+    .menu h1 {
         margin-left: 10px;
     }
+
     ul {
         display: flex;
         flex-direction: row;
@@ -416,27 +420,33 @@ svg {
         max-width: 80%;
     }
 }
+
 @media only screen and (max-device-width: 650px) {
     svg {
         font: 4.5em 'Montserrat';
         height: 40%;
     }
+
     .text-copy {
         stroke-width: 4px;
     }
-    .container h1{
+
+    .container h1 {
         font-size: 35px;
     }
 }
+
 @media only screen and (max-device-width: 550px) {
     svg {
         font: 4em 'Montserrat';
         height: 35%;
     }
+
     .text-copy {
         stroke-width: 3.5px;
     }
-    .container h1{
+
+    .container h1 {
         font-size: 33px;
     }
 }
